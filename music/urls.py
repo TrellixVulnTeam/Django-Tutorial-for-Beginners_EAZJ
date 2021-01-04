@@ -20,6 +20,6 @@ urlpatterns = [
     # /music/
     path('', views.index, name='index'),
 
-    # /music/
-
+    # /music/<album_id>/
+    path('<int:album_id>/', views.detail, name='detail'),
 ]
